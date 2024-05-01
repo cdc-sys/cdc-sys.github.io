@@ -1,1 +1,70 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+  rel="stylesheet">
 
+<h1 id="main" class="nunito-bold" onclick="onMain();">404</h1>
+<style>
+  .nunito-bold {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  p {
+    font-size: 3.2rem;
+  }
+
+  #main {
+    cursor: pointer;
+  }
+
+  a {
+    display: table;
+    margin-left: 0.5rem
+  }
+
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 2.75rem;
+    transform: translateX(-1rem);
+    transition: font-size 1s, transform 1s;
+  }
+
+  html {
+    background-color: #212129;
+    overflow: hidden;
+  }
+
+  .link-class {
+    color: #b6d4fc;
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    color: #cfcfff;
+    font-size: 5rem;
+  }
+</style>
+<script>
+  mainPos = [innerWidth / 2.25, innerHeight / 2.5]
+  mainPosOffsets = [0, 0]
+  mSinAmpl = 15;
+  sinner = 0
+  sinner2 = 0
+  function onMain() {
+  }
+  function update() {
+    document.getElementById("main").setAttribute("style", `transform:
+    translate(${mainPos[0] + mainPosOffsets[0]}px,${mainPos[1] + mainPosOffsets[1]}px);`)
+    mainPos = [innerWidth / 2.25, innerHeight / 2.5]
+    linkPos = [innerWidth / 1.75, 25]
+    sinner += 0.025
+    sinner2 += 0.015
+    mainPosOffsets[0] = mSinAmpl * Math.sin(sinner)
+    mainPosOffsets[1] = mSinAmpl * Math.cos(sinner2)
+  }
+  setInterval(update, 1);
+</script>
