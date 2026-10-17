@@ -1,10 +1,10 @@
 
-function createProjectElement(data){
+function createProjectElement(data) {
     var div = document.createElement("div");
     div.classList.add("project");
 
     var img = document.createElement("img");
-    img.src = "./images/"+data.image;
+    img.src = "./images/" + data.image;
     if (data.image == null) img.src = "./images/place.png";
     div.appendChild(img);
 
@@ -20,7 +20,7 @@ function createProjectElement(data){
     document.getElementById("item-container").appendChild(div);
 }
 
-async function fetchProjects(){
+async function fetchProjects() {
     try {
         var req = await fetch("./data.json");
         if (req.status == 200) {
