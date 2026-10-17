@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Crappy Bird",
+        "url":"https://cdc-sys.com/crappy-bird",
+        "description":"A simple clone of flappy bird made in class.",
+        "image":"crappy.png"
+    },
+    {
+        "name":"DELTARUNE Engine",
+        "url":"https://cdc-sys.com/seam-web",
+        "description":"An attempt at making a GameMaker DELTARUNE engine.",
+        "image":"seamweb.png"
+    },
+    {
+        "name":"UNO",
+        "url":"https://uno.cdc-sys.com/",
+        "description":"A web version of UNO whipped up in a coupple of days.",
+        "image":"uno.png"
+    },
+    {
+        "name":"Level Thumbnails",
+        "url":"https://levelthumbnails.com/",
+        "description":"A Geometry Dash mod that adds thumbnails to level cells.",
+        "image":"levelthumbs.png"
+    },
+    {
+        "name":"Replies",
+        "url":"https://geode-sdk.org/mods/cdc.replies",
+        "description":"A Geometry Dash mod that adds replies to comments.",
+        "image":"replies.png"
+    }
+]
