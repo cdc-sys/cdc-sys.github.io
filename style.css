@@ -53,10 +53,12 @@ bar {
 
 #links a {
     color: #b6d4fc;
+    user-select: none;
     text-decoration: none;
 }
 
 h1 {
+    user-select: none;
     color: #cfcfff;
     font-size: 5rem;
     text-align: center;
