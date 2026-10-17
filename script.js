@@ -45,8 +45,10 @@ function bg_update() {
     var speed = 0.1;
     scroll += speed;
     var separation = 30;
+    CANVAS.hidden = true;
     CANVAS.width = window.innerWidth / 2;
     CANVAS.height = window.innerHeight / 2;
+    CANVAS.hidden = false;
     for (var _i = -1; _i < CANVAS.height / separation + 1; _i++) {
         for (var i = -1; i < CANVAS.width / separation + 1; i++) {
             drawStar(CONTEXT, i * separation + scroll, _i * separation + scroll, 5, 4, 7.5);
