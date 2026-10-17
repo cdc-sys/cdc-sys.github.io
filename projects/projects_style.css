@@ -86,6 +86,14 @@ a {
     padding-right: 10px;
 }
 
+.cog {
+    grid-column: 1 / -1;
+    width: 80%;
+    padding-bottom: 10px;
+    border-bottom: solid 2px rgba(207, 207, 255, 0.25);
+    font-weight:bold;
+}
+
 @media (max-width:950px) {
     #project-container {
         width: 600px;
